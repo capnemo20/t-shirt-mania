@@ -12,10 +12,12 @@ function App() {
       children:[
         {
           path:"/",
+          loader:()=>fetch("tshirts.json"),
           element: <Home></Home>
         },
         {
           path:"/orders",
+          
           element: <Orders></Orders>
         }
       ]
